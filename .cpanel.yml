@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sign2238/public_html
+  script:
+    - npm install
+    - npm run build
+  environment:
+    global:
+      - NODE_ENV=production
